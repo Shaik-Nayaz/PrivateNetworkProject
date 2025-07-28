@@ -37,11 +37,17 @@ bash
 dnf install -y mysql-server
 systemctl enable --now mysqld
 mysql --version
+    1<img width="588" height="527" alt="image" src="https://github.com/user-attachments/assets/209a90be-39a0-475c-9797-7384106a24a8" />
+
 
 Step 5: Create Application Database and User
 bash
 mysql -u root -p
 In MySQL shell:
+
+
+
+
 
 sql
 CREATE DATABASE udc;
@@ -56,6 +62,8 @@ mysql -h <DB-SERVER-IP> -u udc -p
 3️⃣ *UDC Application Configuration*
 Step 7: Test Database Connection from PHP
 Create /var/www/html/db_check.php as described.
+<img width="1600" height="822" alt="image" src="https://github.com/user-attachments/assets/26136fcb-65d3-4c08-99b8-e834eafe2211" />
+
 
 Visit: http://<Web-Server-IP>/db_check.php
 
@@ -82,3 +90,5 @@ Step 10: Deploy and Use UDC main.php
 Edit /var/www/html/main.php (see earlier for code).
 In browser, visit: http://<Web-Server-IP>/main.php
 Fill out the form and submit.
+<img width="767" height="298" alt="Screenshot 2025-07-25 130152 (1)(1)" src="https://github.com/user-attachments/assets/015322f0-b480-45b3-9bf7-358abe8dfb5d" />
+
