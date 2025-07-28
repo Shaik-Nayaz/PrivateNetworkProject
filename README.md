@@ -15,6 +15,7 @@ Step 1: Install and Start Apache
 yum install httpd -y
 systemctl enable --now httpd
 
+
 Step 2: Install PHP (and PHP-MySQL extension)
 bash
 dnf module -y enable php:8.1
@@ -26,6 +27,8 @@ Step 3: Test PHP with a "Hello World" Page
 bash
 echo "<?php echo 'Hello World!'; ?>" > /var/www/html/php_test.php
 In browser, visit: http://<Web-Server-IP>/php_test.php
+<img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/bd2d544e-2c53-4de1-9fd6-e4d1d4eb7794" />
+
 
 
 2️⃣ *Database Server Setup (MySQL)*
